@@ -1,0 +1,34 @@
+{
+  "project": "Metabolic Energy Expenditure & Calorie Predictor",
+  "dataset": "Physiological Exercise Telemetry Cohort (N=2,000, d=7)",
+  "validation_scheme": "5-Fold Cross-Validation",
+  "features": [
+    "Gender_Male",
+    "Age_Years",
+    "Height_cm",
+    "Weight_kg",
+    "Exercise_Duration_min",
+    "Heart_Rate_bpm",
+    "Body_Temp_Celsius"
+  ],
+  "results": [
+    {
+      "model": "HistGradientBoosting",
+      "r2": 0.9931,
+      "rmse": 6.35,
+      "mae": 4.35
+    },
+    {
+      "model": "Random Forest (200 Trees)",
+      "r2": 0.9853,
+      "rmse": 9.28,
+      "mae": 6.24
+    },
+    {
+      "model": "Ridge Regression (Linear)",
+      "r2": 0.9164,
+      "rmse": 22.1,
+      "mae": 17.46
+    }
+  ]
+}
